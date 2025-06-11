@@ -1,5 +1,5 @@
 import type { Project, Skill, TimelineEvent, SocialLink } from './types';
-import { Github, Linkedin, Mail, Layers, Brain, Telescope, GitBranch, Rocket, Code, Zap, Settings, Tool, Package, Briefcase, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, Layers, Brain, Telescope, GitBranch, Rocket, Code, Zap, Settings, SlidersHorizontal, Package, Briefcase, ExternalLink } from 'lucide-react';
 
 export const projectsData: Project[] = [
   {
@@ -45,7 +45,7 @@ export const skillsData: Skill[] = [
   { id: 'skill-4', name: 'Node.js', proficiency: 4, category: 'Backend', icon: Settings },
   { id: 'skill-5', name: 'Python', proficiency: 3, category: 'Languages', icon: Code },
   { id: 'skill-6', name: 'HTML & CSS', proficiency: 5, category: 'Frontend', icon: Code },
-  { id: 'skill-7', name: 'Tailwind CSS', proficiency: 5, category: 'Frontend', icon: Tool },
+  { id: 'skill-7', name: 'Tailwind CSS', proficiency: 5, category: 'Frontend', icon: SlidersHorizontal },
   { id: 'skill-8', name: 'SQL Databases', proficiency: 4, category: 'Backend', icon: Package },
   { id: 'skill-9', name: 'NoSQL Databases', proficiency: 3, category: 'Backend', icon: Package },
   { id: 'skill-10', name: 'Git & GitHub', proficiency: 5, category: 'Tools', icon: GitBranch },
