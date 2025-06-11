@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onViewDetails }) => 
       <CardHeader className="items-center text-center">
         <div 
           className={`w-24 h-24 md:w-32 md:h-32 rounded-full ${project.planetColor} shadow-lg mb-4 animate-float flex items-center justify-center transition-all duration-500 group-hover:scale-110`}
-          style={{ animationDelay: `${Math.random() * 2}s` }} // Stagger float animation
+          style={{ animationDelay: project.animationDelay }} // Stagger float animation
         >
            {/* Optional: Add a simple pattern or icon inside the planet */}
         </div>

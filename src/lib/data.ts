@@ -1,6 +1,10 @@
 import type { Project, Skill, TimelineEvent, SocialLink } from './types';
 import { Github, Linkedin, Mail, Layers, Brain, Telescope, GitBranch, Rocket, Code, Zap, Settings, SlidersHorizontal, Package, Briefcase, ExternalLink } from 'lucide-react';
 
+function generateRandomAnimationDelay(): string {
+  return (Math.random() * 1.5 + 0.5).toFixed(4) + 's'; // Random delay between 0.5s and 2s
+}
+
 export const projectsData: Project[] = [
   {
     id: 'project-1',
@@ -13,6 +17,7 @@ export const projectsData: Project[] = [
     liveLink: '#',
     repoLink: '#',
     planetColor: 'bg-gradient-to-br from-purple-500 to-indigo-600',
+    animationDelay: generateRandomAnimationDelay(),
   },
   {
     id: 'project-2',
@@ -24,6 +29,7 @@ export const projectsData: Project[] = [
     imageHint: 'api code',
     repoLink: '#',
     planetColor: 'bg-gradient-to-br from-teal-500 to-cyan-600',
+    animationDelay: generateRandomAnimationDelay(),
   },
   {
     id: 'project-3',
@@ -35,6 +41,7 @@ export const projectsData: Project[] = [
     imageHint: 'virtual reality',
     liveLink: '#',
     planetColor: 'bg-gradient-to-br from-pink-500 to-rose-600',
+    animationDelay: generateRandomAnimationDelay(),
   },
 ];
 
