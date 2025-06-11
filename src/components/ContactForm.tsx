@@ -2,11 +2,11 @@
 
 import React from 'react';
 import { useFormState, useFormStatus } from 'react-dom';
-import { submitContactForm, type FormState } from '/workspace/portfolio/src/app/actions.ts';
-import { Label } from '@/components/ui/label';
+import { submitContactForm, type FormState } from '@/app/actions';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
 import { Send, Loader2 } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
 
@@ -36,7 +36,7 @@ function SubmitButton() {
 
 const ContactForm: React.FC = () => {
   const [state, formAction] = useFormState(submitContactForm, initialState);
-  const { toast } = useToast('/workspace/portfolio/src/hooks/use-toast.ts');
+  const { toast } = useToast();
   const formRef = React.useRef<HTMLFormElement>(null);
 
   React.useEffect(() => {
